@@ -1,53 +1,69 @@
+// 題意思考：求到各點的最小距離和，測資不一定依照大小，先排序縮短執行時間，中位數到各點距離總和會最小
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #pragma warning(disable : 4996)
 
-int a[501] = {0};
-int b[30000] = {0};
+// 初始化測試數量
+int test_num = 0;
 
 int main()
 {
-    int r = 0, s = 0, m = 0, sum = 0;
-    scanf("%d", &m);
-    while (m != 0)
+    scanf("%d", &test_num);
+
+    while (test_num != 0)
     {
-        scanf("%d", &r);
-        for (int i = 1; i <= r; i++)
+        // 宣告關係數量、街道編號、中位數位置、中位數、距離總和
+        int relatives_num = 0, street_num = 0, mid_pos, mid_num, sum = 0;
+        // 宣告鄰居位置的陣列
+        int street[500] = {0};
+
+        scanf("%d", &relatives_num);
+
+        // 存入鄰居位置的陣列
+        for (int i = 0; i < relatives_num; i++)
         {
-            scanf("%d", &a[i]);
+            scanf("%d", &street[i]);
         }
-        for (int i = 0; i < r; i++)
+
+        // 排序資料(泡沫排序法)
+        for (int i = 0; i < relatives_num; i++)
         {
-            for (int j = 1; j < r; j++)
+            for (int j = 1; j < relatives_num - i; j++)
             {
-                if (a[j] > a[j + 1])
+                if (street[j - 1] > street[j])
                 {
-                    int temp = a[j];
-                    a[j] = a[j + 1];
-                    a[j + 1] = temp;
+                    int temp = street[j];
+                    street[j] = street[j - 1];
+                    street[j - 1] = temp;
                 }
             }
         }
-        for (int i = a[1]; i <= a[r]; i++)
+
+        // 求中位數位置
+        mid_pos = relatives_num / 2;
+
+        // 總關係數為偶數
+        if (relatives_num % 2 == 0)
         {
-            for (int j = 1; j <= r; j++)
-            {
-                sum = sum + abs(i - a[j]);
-            }
-            b[i] = sum;
-            sum = 0;
+            mid_num = (street[mid_pos] + street[mid_pos - 1]) / 2;
         }
-        int min = b[a[1]];
-        for (int i = a[1]; i <= a[r]; i++)
+        // 總關係數為奇數
+        else
         {
-            if (b[i] <= min)
-            {
-                min = b[i];
-            }
+            mid_num = street[mid_pos];
         }
-        printf("%d\n", min);
-        m--;
+
+        // 計算距離總和
+        for (int i = 0; i < relatives_num; i++)
+        {
+            sum = sum + abs(mid_num - street[i]);
+        }
+
+        printf("%d\n", sum);
+
+        test_num--;
     }
 
     system("PAUSE");
