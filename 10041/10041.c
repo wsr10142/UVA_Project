@@ -1,11 +1,11 @@
-// 題意思考：求到各點的最小距離和，測資不一定依照大小，先排序縮短執行時間，中位數到各點距離總和會最小
+// 題意思考：求到各點的最小距離和，輸入的測資不一定按照大小，先排序縮短執行時間，中位數到各點距離總和會最小
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #pragma warning(disable : 4996)
 
-// 初始化測試數量
+// 宣告測資筆數
 int test_num = 0;
 
 int main()
