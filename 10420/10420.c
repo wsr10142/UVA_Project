@@ -5,18 +5,9 @@
 #include <math.h>
 #pragma warning(disable : 4996)
 
-int order=0;
-
 int main()
-{   
-    scanf("%d",&order);
-
-    
-    while(order>=0)
-    {
-        scanf("%s",)
-    }
+{
 
     system("PAUSE");
     return 0;
-}   
+}
