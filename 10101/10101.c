@@ -45,14 +45,14 @@ int main()
         hajar[0] = hajar[0] / 1000;
         if (num == 0 && flag == 0)
         {
-            printf("%4d. %d hajar ", count, hajar[0]);
+            printf("%4d. %d hajar", count, hajar[0]);
             if (shata[0] != 0)
             {
-                printf("%d shata ", shata[0]);
+                printf(" %d shata", shata[0]);
             }
             if (a != 0)
             {
-                printf("%d", a);
+                printf(" %d", a);
             }
             printf("\n");
             flag = 1;
@@ -62,18 +62,18 @@ int main()
         lakh[0] = lakh[0] / 100000;
         if (num == 0 && flag == 0)
         {
-            printf("%4d. %d lakh ", count, lakh[0]);
+            printf("%4d. %d lakh", count, lakh[0]);
             if (hajar[0] != 0)
             {
-                printf("%d hajar ", hajar[0]);
+                printf(" %d hajar", hajar[0]);
             }
             if (shata[0] != 0)
             {
-                printf("%d shata ", shata[0]);
+                printf(" %d shata", shata[0]);
             }
             if (a != 0)
             {
-                printf("%d", a);
+                printf(" %d", a);
             }
             printf("\n");
             flag = 1;
@@ -81,22 +81,22 @@ int main()
         num = num / 10000000;
         if (num != 0 && num < 100)
         {
-            printf("%4d. %lld kuti ", count, num);
+            printf("%4d. %lld kuti", count, num);
             if (lakh[0] != 0)
             {
-                printf("%d lakh ", lakh[0]);
+                printf(" %d lakh", lakh[0]);
             }
             if (hajar[0] != 0)
             {
-                printf("%d hajar ", hajar[0]);
+                printf(" %d hajar", hajar[0]);
             }
             if (shata[0] != 0)
             {
-                printf("%d shata ", shata[0]);
+                printf(" %d shata", shata[0]);
             }
             if (a != 0)
             {
-                printf("%d", a);
+                printf(" %d", a);
             }
             printf("\n");
         }
@@ -105,30 +105,30 @@ int main()
             b = num % 100;
             num = num - b;
             num = num / 100;
-            printf("%4d. %lld shata ", count, num);
+            printf("%4d. %lld shata", count, num);
             if (b != 0)
             {
-                printf("%d kuti ", b);
+                printf(" %d kuti", b);
             }
             if (b == 0)
             {
-                printf("kuti ");
+                printf(" kuti");
             }
             if (lakh[0] != 0)
             {
-                printf("%d lakh ", lakh[0]);
+                printf(" %d lakh", lakh[0]);
             }
             if (hajar[0] != 0)
             {
-                printf("%d hajar ", hajar[0]);
+                printf(" %d hajar", hajar[0]);
             }
             if (shata[0] != 0)
             {
-                printf("%d shata ", shata[0]);
+                printf(" %d shata", shata[0]);
             }
             if (a != 0)
             {
-                printf("%d", a);
+                printf(" %d", a);
             }
             printf("\n");
         }
@@ -140,34 +140,34 @@ int main()
             num = num - shata[1];
             shata[1] = shata[1] / 100;
             num = num / 1000;
-            printf("%4d. %lld hajar ", count, num);
+            printf("%4d. %lld hajar", count, num);
             if (shata[1] != 0)
             {
-                printf("%d shata ", shata[1]);
+                printf(" %d shata", shata[1]);
             }
             if (b != 0)
             {
-                printf("%d kuti ", b);
+                printf(" %d kuti", b);
             }
             if (b == 0)
             {
-                printf("kuti ");
+                printf(" kuti");
             }
             if (lakh[0] != 0)
             {
-                printf("%d lakh ", lakh[0]);
+                printf(" %d lakh", lakh[0]);
             }
             if (hajar[0] != 0)
             {
-                printf("%d hajar ", hajar[0]);
+                printf(" %d hajar", hajar[0]);
             }
             if (shata[0] != 0)
             {
-                printf("%d shata ", shata[0]);
+                printf(" %d shata", shata[0]);
             }
             if (a != 0)
             {
-                printf("%d", a);
+                printf(" %d", a);
             }
             printf("\n");
         }
@@ -187,85 +187,86 @@ int main()
                 lakh[1] = num % 100;
                 num = num - lakh[1];
                 num = num / 100;
-                printf("%4d. %lld kuti ", count, num);
+                printf("%4d. %lld kuti", count, num);
                 if (lakh[1] != 0)
                 {
-                    printf("%d lakh ", lakh[1]);
+                    printf(" %d lakh", lakh[1]);
                 }
                 if (hajar[1] != 0)
                 {
-                    printf("%d hajar ", hajar[1]);
+                    printf(" %d hajar", hajar[1]);
                 }
                 if (shata[1] != 0)
                 {
-                    printf("%d shata ", shata[1]);
+                    printf(" %d shata", shata[1]);
                 }
                 if (b != 0)
                 {
-                    printf("%d kuti ", b);
+                    printf(" %d kuti", b);
                 }
                 if (b == 0)
                 {
-                    printf("kuti ");
+                    printf(" kuti");
                 }
                 if (lakh[0] != 0)
                 {
-                    printf("%d lakh ", lakh[0]);
+                    printf(" %d lakh", lakh[0]);
                 }
                 if (hajar[0] != 0)
                 {
-                    printf("%d hajar ", hajar[0]);
+                    printf(" %d hajar", hajar[0]);
                 }
                 if (shata[0] != 0)
                 {
-                    printf("%d shata ", shata[0]);
+                    printf(" %d shata", shata[0]);
                 }
                 if (a != 0)
                 {
-                    printf("%d", a);
+                    printf(" %d", a);
                 }
                 printf("\n");
                 flag = 1;
             }
             if (flag == 0)
             {
-                printf("%4d. %lld lakh ", count, num);
+                printf("%4d. %lld lakh", count, num);
                 if (hajar[1] != 0)
                 {
-                    printf("%d hajar ", hajar[1]);
+                    printf(" %d hajar", hajar[1]);
                 }
                 if (shata[1] != 0)
                 {
-                    printf("%d shata ", shata[1]);
+                    printf(" %d shata", shata[1]);
                 }
                 if (b != 0)
                 {
-                    printf("%d kuti ", b);
+                    printf(" %d kuti", b);
                 }
                 if (b == 0)
                 {
-                    printf("kuti ");
+                    printf(" kuti");
                 }
                 if (lakh[0] != 0)
                 {
-                    printf("%d lakh ", lakh[0]);
+                    printf(" %d lakh", lakh[0]);
                 }
                 if (hajar[0] != 0)
                 {
-                    printf("%d hajar ", hajar[0]);
+                    printf(" %d hajar", hajar[0]);
                 }
                 if (shata[0] != 0)
                 {
-                    printf("%d shata ", shata[0]);
+                    printf(" %d shata", shata[0]);
                 }
                 if (a != 0)
                 {
-                    printf("%d", a);
+                    printf(" %d", a);
                 }
                 printf("\n");
             }
         }
     }
+
     system("PAUSE");
     return 0;
 }
