@@ -5,9 +5,16 @@
 #include <math.h>
 #pragma warning(disable : 4996)
 
+// 宣告輸入的大數
+long long int num = 0;
+
+// 對輸入的字串做分解並輸出
+void func(long long num)
+{
+}
+
 int main()
 {
-    long long int num = 0;
     int count = 0;
     while (scanf("%lld", &num) != EOF)
     {
