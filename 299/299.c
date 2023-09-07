@@ -5,7 +5,7 @@
 #pragma warning(disable : 4996)
 
 // 宣告測資筆數
-int quantity = o;
+int quantity = 0;
 
 // 宣告每筆測資長度
 int length = 0;
@@ -32,17 +32,18 @@ int main()
         // 泡沫排序，並計算交換次數
         for (int m = 0; m < length - 1; m++)
         {
-            for (int n = 0; n < length - m; n++)
+            for (int n = 0; n < length - 1 - m; n++)
             {
                 if (num[n] > num[n + 1])
                 {
-                    int temp = num[j];
-                    num[j] = num[j + 1];
-                    num[j + 1] = temp;
+                    int temp = num[n];
+                    num[n] = num[n + 1];
+                    num[n + 1] = temp;
                     count++;
                 }
             }
         }
+
         printf("Optimal train swapping takes %d swaps.\n", count);
         count = 0;
     }
