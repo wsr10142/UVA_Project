@@ -15,15 +15,23 @@ void func(long long int num)
 {
     if (num >= 10000000)
     {
+        num = num / 10000000;
+        func(num);
     }
     if (num >= 100000)
     {
+        num = num / 100000;
+        func(num);
     }
     if (num >= 1000)
     {
+        num = num / 1000;
+        func(num);
     }
     if (num >= 100)
     {
+        num = num / 100;
+        func(num);
     }
 }
 
