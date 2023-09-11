@@ -15,7 +15,6 @@ void func(long long int num)
 {
     if (num >= 10000000)
     {
-        ㄑ
     }
     if (num >= 100000)
     {
