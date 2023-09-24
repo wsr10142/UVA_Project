@@ -16,36 +16,35 @@ void func(long long int num)
     //10000000為kuti
     if (num >= 10000000)
     {
-        printf(" %d kuti",num / 10000000);
+        func(num / 10000000);
+        printf(" kuti");
         num = num % 10000000;
-        func(num);
     }
     //100000為lakh
     if (num >= 100000)
     {
-        printf(" %d lakh",num / 100000);
+        func(num/ 100000);
+        printf(" lakh");
         num = num % 100000;
-        func(num);
     }
     //1000為hajar
     if (num >= 1000)
     {
-        printf(" %d hajar",num / 1000);
+        func(num / 1000);
+        printf(" hajar",num);
         num = num % 1000;
-        func(num);
     }
     //100為shata
     if (num >= 100)
     {
-        printf(" %d shata",num / 100);
+        func(num / 100);
+        printf(" shata");
         num = num % 100;
-        func(num);
     }
     //小於100
-    if(num < 100)
+    if(num > 0)
     {
         printf(" %d",num);
-        return;
     }
 }
 
@@ -61,7 +60,7 @@ int main()
         }
         else
         {
-            printf("0");
+            printf(" 0");
         }
 
         printf("\n");
