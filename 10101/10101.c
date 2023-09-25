@@ -22,7 +22,7 @@ void func(long long int num)
         //單位計數不為0，才要印出單位
         if(num / 10000000 > 0)
         {
-            printf(" kuti");
+            printf(" kuti")a;
         }
         num = num % 10000000;
     }
