@@ -30,7 +30,7 @@ void func(long long int num)
     if (num >= 100000)
     {
         //如果超過100000，則需要繼續呼叫func計算
-        func(num/ 100000);
+        //func(num/ 100000);
 
         //單位計數不為0，才要印出單位
         if(num / 100000 > 0)
@@ -43,7 +43,7 @@ void func(long long int num)
     if (num >= 1000)
     {
         //如果超過1000，則需要繼續呼叫func計算
-        func(num / 1000);
+        //func(num / 1000);
 
         //單位計數不為0，才要印出單位
         if(num / 1000 > 0)
@@ -56,7 +56,7 @@ void func(long long int num)
     if (num >= 100)
     {
         //如果超過100，則需要繼續呼叫func計算
-        func(num / 100);
+        //func(num / 100);
 
         //單位計數不為0，才要印出單位
         if(num / 100 > 0)
