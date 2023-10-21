@@ -6,6 +6,7 @@
 
 int range = 0;
 int political = 0;
+int political_hartals[100] = {0};
 int hartals = 0;
 
 int main()
