@@ -1,4 +1,4 @@
-// 題意思考：
+// 題意思考：給定天數、政黨數量、政黨罷工頻率，判斷政黨總罷工天數，星期五跟六不算
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -37,10 +37,10 @@ int main()
         // 從第一天開始依序判斷是否罷工
         for (int k = 1; k < range + 1; k++)
         {
-            // 不為星期五或星期六時
+            // 該天不為星期五或星期六時
             if (k % 7 != 6 && k % 7 != 0)
             {
-                // 判斷是否有政黨罷工，當加一後break，避免重複計算
+                // 判斷該天是否有政黨罷工，當加一後break，避免重複計算
                 for (int m = 0; m < political; m++)
                 {
                     if (k % political_hartals[m] == 0)
@@ -52,6 +52,7 @@ int main()
             }
         }
 
+        // 印出結果
         printf("%d\n", hartals);
 
         // hartals歸零
