@@ -14,7 +14,7 @@ int player = 0;
 // 宣告贏的機率
 double probability = 0;
 
-// 宣告第幾位獲勝
+// 宣告是第幾位獲勝
 int win_ith = 0;
 
 int main()
@@ -24,9 +24,22 @@ int main()
     for (int i = 0; i < case_num; i++)
     {
         scanf("%d %f %d", &player, &probability, win_ith);
-q^[(r-1)*n] * q^(i-1) * p
-        // 印出結果
-        printf("%4f\n", );
+
+        // 勝利機率為0
+        if (p == 0)
+        {
+            printf("0.0000\n");
+        }
+
+        // 勝利機率大於0
+        else
+        {
+            // 失敗的機率
+            double q = 1 - probability;
+            // q^[(r-1)*n] * q^(i-1) * p
+            // 印出結果
+            printf("%.4f\n", pow());
+        }
     }
 
     system("PAUSE");
