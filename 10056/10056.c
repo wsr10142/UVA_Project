@@ -24,7 +24,7 @@ int main()
     for (int i = 0; i < case_num; i++)
     {
         scanf("%d %f %d", &player, &probability, win_ith);
-
+q^[(r-1)*n] * q^(i-1) * p
         // 印出結果
         printf("%4f\n", );
     }
