@@ -4,17 +4,14 @@
 #include <stdlib.h>
 #pragma warning(disable : 4996)
 
-// 宣告case數量
-int case_num = 0;
+// 宣告速度
+int speed = 0;
 
-// 宣告玩家數量
-int player = 0;
+// 宣告經過的時間
+int time = 0;
 
-// 宣告贏的機率
-double probability = 0;
-
-// 宣告是第幾位獲勝
-int win_ith = 0;
+// 宣告位移
+int area = 0;
 
 int main()
 {
