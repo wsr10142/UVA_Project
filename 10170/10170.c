@@ -16,6 +16,18 @@ int main()
 {
     while (scanf("%d %d", &size, &day_ith) != EOF)
     {
+        // 紀錄日期(旅團離開的日期)
+        int sum = 0;
+
+        // 計算某日的飯店旅團人數
+        while (sum < day_ith)
+        {
+            sum = sum + size;
+            size = size + 1;
+        }
+
+        // 印出結果
+        printf("%d\n", size);
     }
 
     system("PAUSE");
