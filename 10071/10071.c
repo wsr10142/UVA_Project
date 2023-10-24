@@ -15,28 +15,7 @@ int area = 0;
 
 int main()
 {
-    scanf("%d", &case_num);
-
-    for (int i = 0; i < case_num; i++)
-    {
-        scanf("%d %lf %d", &player, &probability, &win_ith);
-
-        // 勝利機率為0
-        if (probability == 0)
-        {
-            printf("0.0000\n");
-        }
-
-        // 勝利機率大於0
-        else
-        {
-            // 失敗的機率
-            double q = 1 - probability;
-
-            // 印出結果
-            printf("%.4f\n", pow(q, (win_ith - 1)) * probability / (1 - pow(q, player)));
-        }
-    }
+    scanf("%d %d", &speed, &time);
 
     system("PAUSE");
     return 0;
