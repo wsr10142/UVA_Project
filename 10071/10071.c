@@ -17,6 +17,10 @@ int main()
 {
     scanf("%d %d", &speed, &time);
 
+    area = speed * (2 * time);
+
+    printf("%d\n", area);
+
     system("PAUSE");
     return 0;
 }
