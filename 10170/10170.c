@@ -16,26 +16,17 @@ int main()
 {
     while (scanf("%d %lld", &size, &day_ith) != EOF)
     {
-        // 當size比所求的特定天數還要多，表示該旅團尚未退房
-        if(size >= day_ith)
+        long long int sum = size;
+
+        // 利用等差級數和求出特定日期的旅團人數
+        while(sum < day_ith)
         {
-            printf("%d\n", size);
+            size = size + 1;
+            sum = sum + size;
         }
 
-        else
-        {
-            long long int sum = size;
-            
-            // 利用等差級數和求出特定日期的旅團人數
-            while(sum < day_ith)
-            {
-                sum = sum + size;
-                size = size + 1;
-            }
-
-            // 輸出結果前要先減一
-            printf("%d\n", size - 1);
-        }
+        // 印出結果
+        printf("%d\n", size);
     }
 
     system("PAUSE");
