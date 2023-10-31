@@ -12,6 +12,9 @@ int main()
 {
     while (scanf("%d", &cola) != EOF)
     {
+        // 每換一次瓶子，就會減少兩個空瓶子，實際可以喝的cola多一瓶，
+        // 所以總瓶數為cola數加上換的次數，total = cola + cola / 2
+        // 而因為可以借瓶子，所以可以不用考慮不夠的情況，total = cola * 3 / 2
         printf("%d\n", cola * 3 / 2);
     }
 
