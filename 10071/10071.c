@@ -17,7 +17,7 @@ int main()
 {
     while (scanf("%d %d", &speed, &time) != EOF)
     {
-        // 位移為速度乘上時間
+        // 位移為速度乘上時間，題目要求兩倍的時間
         area = speed * (2 * time);
 
         printf("%d\n", area);
