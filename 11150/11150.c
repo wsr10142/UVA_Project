@@ -7,16 +7,17 @@
 // 宣告cola初始數量
 int cola = 0;
 
-int ;
+// 可借的瓶子
+int empty = 0;
+
+// 總共可以喝到的瓶數
+int total = 0;
 
 int main()
 {
-    while (scanf("%d %d", &speed, &time) != EOF)
+    while (scanf("%d", &cola) != EOF)
     {
-        // 位移為速度乘上時間，題目要求兩倍的時間
-        area = speed * (2 * time);
-
-        printf("%d\n", area);
+        printf("%d\n",cola*3/2);
     }
 
     system("PAUSE");
