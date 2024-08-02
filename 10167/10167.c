@@ -7,24 +7,17 @@
 // 櫻桃數量
 int size = 0;
 
-// 
-long long int day_ith = 0;
+// 放置座標位置，動態配置陣列大小
+int pos_x = 0;
+int pos_y = 0;
 
 int main()
 {
-    while (scanf("%d", &size) != 0)
+    // 輸入位置並存入array
+    for(int i = 0; i < size; i++)
     {
-
-        long long int sum = size;
-
-        // 
-        while (sum < day_ith)
-        {
-            size = size + 1;
-            sum = sum + size;
-        }
-
-        printf("%d\n", size);
+        scanf("%d",&pos_x[i]);
+        scanf("%d",&pos_y[i]);
     }
 
     system("PAUSE");
