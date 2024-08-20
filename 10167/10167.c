@@ -12,8 +12,8 @@ int main()
     scanf("%d",&size);
 
     // 放置座標位置，配置陣列大小
-    int pos_x[size] = 0;
-    int pos_y[size] = 0;
+    int pos_x[size] = {0};
+    int pos_y[size] = {0};
 
     // 輸入位置並存入array
     for(int i = 0; i < 2 * size; i++)
